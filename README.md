@@ -249,14 +249,14 @@ In order to deploy to Heroku:
 ```bash
 heroku login
 heroku git:clone -a your-app-name
+heroku config:set NPM_CONFIG_PRODUCTION=false YARN_PRODUCTION=false
 
 cd your-app-name
 git add .
 git commit -am "first commit"
 git push heroku master
-
-heroku config:set NPM_CONFIG_PRODUCTION=false YARN_PRODUCTION=false
 ```
+
 6. As the MongoDB connection URL contains your username and password you should not hard code it in `server/index.js`. If you did so it would be visible in your version control system (e.g. GitHub) and would not be secure. To avoid this you can store the MongoDB connection URL as an environmental variable in Heroku by running the command below (ensuring you modify this as appropriate). This URL is then available in your server code via the variable `process.env.MONGODB_URL`.
 
 ```bash
