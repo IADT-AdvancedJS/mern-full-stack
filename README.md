@@ -96,17 +96,17 @@ If you wish to populate your collection with some records to get started they sh
 
 ```javascript
 {
-    "_id": "5c797f8d9a1fe12d86cca4f6",
+    "_id": ObjectId("5c797f8d9a1fe12d86cca4f6"),
     "name": "Johnny",
     "picture": "https://randomuser.me/api/portraits/med/men/54.jpg"
 },
 {
-    "_id": "5c797fe69a1fe12d86cca4f7",
+    "_id": ObjectId("5c797fe69a1fe12d86cca4f7"),
     "name": "Jane",
     "picture": "https://randomuser.me/api/portraits/med/women/12.jpg"
 },
 {
-    "_id": "5c79802e9a1fe12d86cca4f8",
+    "_id": ObjectId("5c79802e9a1fe12d86cca4f8"),
     "name": "Anita",
     "picture": "https://randomuser.me/api/portraits/med/women/42.jpg"
 }
